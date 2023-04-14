@@ -1,0 +1,77 @@
+// CMD
+// sass --watch styles/main.scss:styles/style.css
+
+// ---------- FONT ---------- */
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap");
+
+/* ---------- RESET ---------- */
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+/* ---------- VARIABLES ---------- */
+:root {
+  /* COLORS */
+  /* PRIMARY */
+  --color-primary: hsl(223, 87%, 63%);
+
+  /* SECONDARY */
+  --color-secondary-1: hsl(223, 100%, 88%);
+  --color-secondary-2: hsl(354, 100%, 66%);
+
+  /* NEUTRAL */
+  --color-neutral-white: hsl(0, 0%, 100%);
+  --color-neutral-gray-1: hsl(0, 0%, 59%);
+  --color-neutral-gray-2: hsl(209, 33%, 12%);
+
+  /* TEXT */
+  --text-heading-size-1: 5rem;
+  --text-heading-size-2: 1.4rem;
+  --text-para-size: 2rem;
+  --text-sans-serif-font: "Libre Franklin", sans-serif;
+  --text-weight-light: 300;
+  // --text-weight-regular: 400;
+  // --text-weight-medium: 500;
+  --text-weight-semibold: 600;
+  --text-weight-bold: 700;
+}
+
+/* ---------- BASE STYLES ---------- */
+body {
+  min-height: 100vh;
+  display: grid;
+  place-content: center;
+
+  font-family: var(--text-sans-serif-font);
+  font-weight: var(--text-weight-light);
+  font-size: var(--text-para-size);
+}
+
+footer {
+  position: absolute;
+  bottom: 1%;
+  left: 1%;
+  // transform: translateX(-50%);
+
+  .attribution {
+    font-size: 11px;
+    text-align: center;
+  }
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
+
+  @include lg {
+    display: none;
+  }
+}

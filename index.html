@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Ping coming soon page</title>
+
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+  <body>
+    <main>
+      <section class="container">
+        <img src="images/logo.svg" alt="PING logo" class="logo" />
+        <h1 class="title">We are launching <span>soon!</span></h1>
+        <p class="subtitle">Subscribe and get notified</p>
+        <form class="input__container">
+          <div class="input__email-container">
+            <input
+              type="text"
+              class="input__email"
+              placeholder="Your email address"
+            />
+            <p class="error hidden">Error</p>
+          </div>
+
+          <button class="input__submit">Notify Me</button>
+        </form>
+        <img
+          src="images/illustration-dashboard.png"
+          alt="Dashboard"
+          class="dashboard"
+        />
+        <div class="share__container">
+          <ion-icon class="share__icon" name="logo-facebook"></ion-icon>
+          <ion-icon class="share__icon" name="logo-twitter"></ion-icon>
+          <ion-icon class="share__icon" name="logo-instagram"></ion-icon>
+        </div>
+        <p class="copyright">&copy; Copyright Ping. All rights reserved.</p>
+      </section>
+    </main>
+
+    <footer>
+      <p class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Me</a>.
+      </p>
+    </footer>
+
+    <!-- SCRIPTS -->
+    <script src="main.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
